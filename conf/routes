@@ -1,0 +1,23 @@
+# Routes
+GET      /health            org.burrosoft.friede.controllers.HealthController.health()
+
+# Garden
+GET      /garden            org.burrosoft.friede.controllers.GardenController.listGardens()
+GET      /garden/:id        org.burrosoft.friede.controllers.GardenController.get(id: Long)
+POST     /garden            org.burrosoft.friede.controllers.GardenController.create(request: Request)
+PUT      /garden            org.burrosoft.friede.controllers.GardenController.update(request: Request)
+DELETE   /garden/:id        org.burrosoft.friede.controllers.GardenController.delete(id: Long)
+
+# Section
+GET      /section            org.burrosoft.friede.controllers.SectionController.listSections()
+GET      /section/:id        org.burrosoft.friede.controllers.SectionController.get(id: Long)
+POST     /section            org.burrosoft.friede.controllers.SectionController.create(request: Request)
+PUT      /section            org.burrosoft.friede.controllers.SectionController.update(request: Request)
+DELETE   /section/:id        org.burrosoft.friede.controllers.SectionController.delete(id: Long)
+
+# Sensor
+GET      /sensor            org.burrosoft.friede.controllers.SensorController.listSensors()
+GET      /sensor/:id        org.burrosoft.friede.controllers.SensorController.get(id: Long)
+POST     /sensor            org.burrosoft.friede.controllers.SensorController.create(request: Request)
+PUT      /sensor            org.burrosoft.friede.controllers.SensorController.update(request: Request)
+DELETE   /sensor/:id        org.burrosoft.friede.controllers.SensorController.delete(id: Long)
